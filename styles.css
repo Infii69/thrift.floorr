@@ -1,3 +1,111 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Content Section */
+section {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Prevent page from moving horizontally */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Make images responsive */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Layout for Mobile Screens */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+    
+    section {
+        padding: 10px;
+    }
+}
+
+/* Small Screen Fix (less than 480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+    
+    nav {
+        padding: 10px;
+    }
+    
+    .nav-links {
+        font-size: 14px;
+    }
+}
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
