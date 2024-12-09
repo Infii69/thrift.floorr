@@ -182,6 +182,15 @@ form button:hover {
     color: #4a3c31;
 }
 
+.instagram-link img {
+    width: 30px; /* Adjust the size here */
+    height: 30px; /* Keep width and height the same for a square image */
+    margin-right: 1em;
+    border-radius: 50%; /* Keeps the image circular */
+    transition: transform 0.3s;
+}
+
+
 html {
     scroll-behavior: smooth; /* Enables smooth scrolling for all anchor links */
 }
