@@ -127,54 +127,6 @@ html {
     object-fit: cover;
 }
 
-.add-to-cart {
-    background-color: #d1a45d;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.add-to-cart:hover {
-    background-color: #9a7a3e;
-}
-
-/* Cart Page */
-#cart {
-    margin: 20px;
-    text-align: center;
-}
-
-.cart-items {
-    margin-bottom: 20px;
-}
-
-.cart-summary {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/* Animation */
-@keyframes cart-animate {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-    50% {
-        transform: scale(1.2);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-
-
-
 /* Section Divider Styling */
 .section-divider {
     height: 4px; /* Thickness of the divider */
@@ -261,7 +213,7 @@ html {
 
 /* Instagram Image in Product Section */
 .product .instagram-link img {
-    width: 100%; /* Full width of the container */
+    width: 90%; /* Full width of the container */
     max-width: 400px; /* Maximum size for large images */
     height: auto; /* Maintain aspect ratio */
     margin-top: 1em; /* Adds spacing above the image */
