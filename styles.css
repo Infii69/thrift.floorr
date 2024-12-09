@@ -1,7 +1,82 @@
-/* Responsive Layout for Mobile Screens */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure no horizontal overflow and allow vertical scrolling */
+html, body {
+    width: 100%;
+    min-height: 100%;  /* Ensure the body takes up full height */
+    overflow-x: auto;  /* Allow horizontal scrolling */
+    overflow-y: auto;  /* Allow vertical scrolling */
+    font-family: Arial, sans-serif;
+}
+
+/* Prevent images or content from overflowing */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    min-height: 100vh;  /* Ensure content takes up full viewport height */
+    padding: 20px;
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Main Content Section */
+section {
+    width: 100%;
+    padding: 20px;
+    overflow: hidden; /* Prevents internal scrollbars, but keeps page scroll */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Mobile responsiveness: Stack navigation links */
 @media (max-width: 768px) {
     .nav-links {
-        flex-direction: column; /* Stack navigation links on smaller screens */
+        flex-direction: column; /* Stack links on smaller screens */
     }
 
     .nav-links li {
@@ -13,10 +88,17 @@
     }
 }
 
-/* Small Screen Fix (less than 480px) */
+/* Fix for very small screens (less than 480px) */
 @media (max-width: 480px) {
     .nav-links {
-        font-size: 14px;
+        font-size: 14px;  /* Reduce font size */
+    }
+}
+
+/* Ensure the page is not zoomed in/out */
+@media (max-width: 480px) {
+    html {
+        font-size: 16px; /* Adjust font size for small screens */
     }
 }
 
