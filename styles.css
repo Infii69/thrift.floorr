@@ -5,6 +5,88 @@
     box-sizing: border-box;
 }
 
+/* Prevent page from shrinking */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+    font-family: Arial, sans-serif;
+}
+
+/* Prevent images or content from shrinking on mobile */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Page Container */
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        font-size: 14px;
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
