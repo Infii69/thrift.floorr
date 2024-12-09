@@ -18,24 +18,6 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    width: 50px; /* Adjust size as needed */
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 0.5em;
-}
-
-.site-name {
-    color: #f5ebe0;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
 .nav-links {
     display: flex;
     list-style: none;
