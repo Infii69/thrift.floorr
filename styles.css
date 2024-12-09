@@ -179,8 +179,8 @@ html {
 
 
 .instagram-link img {
-    width: 30px; /* Adjust the size here */
-    height: 30px; /* Keep width and height the same for a square image */
+    width: 60px; /* Adjust the size here */
+    height: 60px; /* Keep width and height the same for a square image */
     margin-right: 1em;
     border-radius: 50%; /* Keeps the image circular */
     transition: transform 0.3s;
@@ -189,4 +189,30 @@ html {
 
 html {
     scroll-behavior: smooth; /* Enables smooth scrolling for all anchor links */
+}
+
+
+footer {
+    background-color: #8b5e3c; /* Footer background color */
+    color: #f5ebe0; /* Text color */
+    text-align: center; /* Center-align the text */
+    padding: 1em 0; /* Add vertical padding */
+    font-size: 1em; /* Adjust font size */
+    margin-top: 2em; /* Space between the content above and footer */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a neat look */
+}
+
+footer p {
+    margin: 0; /* Remove extra spacing */
+    font-family: Arial, sans-serif; /* Match the site's font style */
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
 }
