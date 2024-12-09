@@ -161,6 +161,23 @@ html {
     color: #4a3c31;
 }
 
+
+/* Instagram Image in Product Section */
+.product .instagram-link img {
+    width: 100%; /* Full width of the container */
+    max-width: 400px; /* Maximum size for large images */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 1em; /* Adds spacing above the image */
+    border-radius: 8px; /* Optional: Rounds the corners */
+    transition: transform 0.3s; /* Add a hover effect */
+}
+
+.product .instagram-link img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+
 .instagram-link img {
     width: 30px; /* Adjust the size here */
     height: 30px; /* Keep width and height the same for a square image */
