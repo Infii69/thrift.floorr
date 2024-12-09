@@ -77,28 +77,6 @@ html {
     color: #f5ebe0;
 }
 
-/* Form styling */
-form input, form textarea, form button {
-    display: block;
-    margin: 1em auto;
-    width: 80%;
-    padding: 0.8em;
-    border: 1px solid #8b5e3c;
-    border-radius: 5px;
-}
-
-form button {
-    background-color: #8b5e3c;
-    color: #f5ebe0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-form button:hover {
-    background-color: #d9a679;
-}
-
-
 /* Section Divider Styling */
 .section-divider {
     height: 4px; /* Thickness of the divider */
