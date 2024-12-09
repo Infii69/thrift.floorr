@@ -47,7 +47,7 @@ section {
     padding: 7em 2em;
 }
 
-.section-divider {
+.section {
     width: 80%;
     height: 2px;
     background-color: #8b5e3c; /* Match the theme */
