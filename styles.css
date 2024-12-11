@@ -124,9 +124,17 @@ header {
 
 nav {
     display: flex;
-    justify-content: center; /* Centers the navigation links horizontally */
-    align-items: center; /* Centers the items vertically */
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8b5e3c;
+    padding: 1em 2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Makes the nav bar sticky */
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s, transform 0.3s;
 }
+
 
 .nav-links {
     display: flex;
@@ -148,6 +156,7 @@ nav {
 
 .nav-links li a:hover {
     color: #d9a679;
+
 }
 
 /* Sections */
@@ -162,13 +171,13 @@ html {
 }
 
 #home {
-    background: #a67c52;
-    color: #f5ebe0;
+    background: hsl(22, 63%, 55%);
+    color: #fcf8f4;
 }
 
 #about {
     font-size: 1.1em;
-    background: #d9a679;
+    background: #e9b24ab6;
     color: #fbf2eb;
 }
 
@@ -260,11 +269,11 @@ html {
 
 /* Section Divider Styling */
 .section-divider {
-    height: 4px; /* Thickness of the divider */
+    height: 10px; /* Thickness of the divider */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #8b5e3c; /* Color of the divider */
-    margin: 2em 0; /* Space above and below the divider */
-    width: 80%; /* Width of the divider */
+    margin: 1em 0; /* Space above and below the divider */
+    width: 100%; /* Width of the divider */
     margin-left: auto; /* Center the divider */
     margin-right: auto; /* Center the divider */
     border-radius: 2px; /* Rounded edges */
