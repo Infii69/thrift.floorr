@@ -224,3 +224,12 @@ footer {
         font-size: 1.8em;
     }
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row; /* Arrange nav items horizontally on small screens */
+        align-items: center; /* Vertically center the items */
+        justify-content: space-around; /* Space them out evenly */
+    }
+}
