@@ -12,16 +12,25 @@
 <body>
     <header>
         <nav>
-            <ul>
-
-                <li><a href="index.html">Home</a></li>
+            <!-- Thrift.Floor Text (Centered) -->
+            <div class="logo">
+                <a href="#home">Thrift.Floor</a>
+            </div>
+            
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div class="menu-icon" id="menu-icon">
+                &#9776; <!-- This is the hamburger icon (3 horizontal lines) -->
+            </div>
+            
+            <!-- Navigation Links (Initially hidden on mobile) -->
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#social">Social</a></li>
-                <li><a href="">Products</a></li>
-
+                <li><a href="#products">Products</a></li>
             </ul>
         </nav>
     </header>
+    
 
     <section id="home">
         <h1>Welcome to the official Thrift.Floor website</h1>
@@ -33,15 +42,70 @@
 
     <section id="about">
         <h2>About Us</h2>
-        <h3>This is an online clothing shop ran by 4-5 people. We sell clothes at best rate. We also provide good quality. Right now we are accepting orders on instagram only. We will be also accpeting orders on this website in a month or two. </h3>
+        <h3>At Thrift.Floor, we believe in more than just selling clothes—we're building a community of people who care about fashion, sustainability, and great deals. Founded by a small team of passionate individuals, our shop is run by 4-5 dedicated people who are constantly working to offer the best thrifted clothing options available. Every item we sell is carefully selected to ensure it meets our high standards of quality and style, all while being affordably priced.
+
+            Our mission is to provide our customers with unique, high-quality fashion pieces at unbeatable prices. We believe in the power of secondhand fashion to help reduce waste and promote sustainability, which is why we make sure every item we sell is in excellent condition, ready to be worn and loved by its new owner.
+            
+            Currently, we are accepting orders exclusively on our Instagram account, where we showcase our latest collection and interact with our growing community. Follow us on Instagram to keep up with our newest arrivals, special promotions, and behind-the-scenes glimpses into our process.
+            
+            What's Next? We’re excited to announce that in the coming months, we’ll be expanding our services and accepting orders directly through our website! This means you'll be able to browse our full collection, place orders, and enjoy a seamless shopping experience, all in one place. Stay tuned for updates as we work to make our online store even better, and be the first to know when we launch!
+            </h3>
     </section>
 
     <div class="section-divider"></div>
 
-    <script src="script.js"></script>
+
 
 </body>
 </html>
+
+<!-- index.html -->
+
+<!-- Products Section -->
+<section id="products" class="products-section">
+    <h1>Our Products</h1>
+    <div class="products-grid">
+        <div class="product-card">
+            <a href="https://www.instagram.com/p/DDMund3tzfH/?img_index=1" target="_blank">
+            <img src="images/prod-1.webp" alt="Product 1">
+            </a>
+            <h2>HRX OVERSIZED T-SHIRT</h2>
+            <p>✳️SIZE : XL
+                ✳️CONDITION 10/10
+                ✳️COLOUR: YELLOW
+            </p>
+            <h2>Rs. 549</2h2>
+        </div>
+
+        <div class="product-card">
+            <a href="https://www.instagram.com/p/DC4H58RJj3w/?img_index=1" target="_blank">
+            <img src="images/prod-2.webp" alt="Product 2">
+            </a>
+            <h2>BASIC HOODIE WITH BACKPRINT</h2>
+            <p>✳️BRAND : ROADSTER
+                ✳️SIZE : M(MEDIUM)
+                ✳️CONDITION 9/10
+                ✳️COLOUR : LIGHT BROWN</p>
+            <h2>Rs. 499</h2>
+
+        </div>
+
+        <div class="product-card">
+            <a href="https://www.instagram.com/p/DDFMhTwTi3q/?img_index=1" target="_blank">
+            <img src="images/prod-3.webp" alt="Product 3">
+            </a>
+            <h2>HIGHLANDER BLACK SWEATSHIRT</h2>
+            <p>✳️SIZE : XL (L,M,S,XXL)
+                ✳️CONDITION : NEW 10/10
+                ✳️BRAND : HIGHLANDER</p>
+            <h2>Rs. 899</h2>
+
+        </div>
+        <!-- Add more product cards here -->
+    </div>
+</section>
+
+<div class="section-divider"></div>
 
 <section id="social">
     <h2>Follow Us on Instagram</h2>
@@ -59,3 +123,5 @@
 <footer>
     <p>&copy; 2024 Thrift.Floor™. All rights reserved.</p>
 </footer>
+
+<script src="script.js"></script>
