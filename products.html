@@ -124,6 +124,21 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+        // Get the header element
+        const header = document.querySelector('header');
+      
+        // Listen for the scroll event
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 50) { // When scrolled down more than 50px
+            header.classList.add('hidden'); // Add the 'hidden' class
+          } else {
+            header.classList.remove('hidden'); // Remove the 'hidden' class
+          }
+        });
+      </script>
+      
 </body>
 
 </html>
