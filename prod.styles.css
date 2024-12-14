@@ -152,7 +152,7 @@ footer {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1080px) {
     .products-grid {
         grid-template-columns: repeat(3, 1fr); /* 3 columns */
         grid-auto-rows: auto; /* Allow unlimited rows */
