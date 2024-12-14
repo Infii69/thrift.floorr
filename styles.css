@@ -34,6 +34,7 @@ flex-wrap: nowrap;
 }
 
 .nav-links {
+  flex-wrap: nowrap;
   display: flex;
   flex-direction: row; /* Horizontal layout */
   list-style: none;
