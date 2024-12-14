@@ -234,7 +234,7 @@ footer {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) {
   header {
     padding: 15px 20px;
   }
@@ -269,7 +269,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   body {
     font-size: 14px;
   }
