@@ -23,13 +23,14 @@ header {
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: nowrap;
 }
 
-header, nav {
+header nav {
   display: flex;
   justify-content: space-between; /* Spread links evenly */
   align-items: center; /* Center items vertically */
-
+flex-wrap: nowrap;
 }
 
 .nav-links {
@@ -472,21 +473,24 @@ footer {
   }
 }
 
-/* Back to Home Button Styling */
+
 .back-to-home {
-  margin-top: 30px;
-  text-align: center;
+  display: flex;
+  justify-content: center; /* Center the button */
+  margin-top: 20px; /* Add some spacing from the content */
 }
 
-.back-home-btn {
-  padding: 10px 20px;
-  background-color: #2a2a72;
+.back-to-home button {
+  background-color: #4CAF50; /* Green color */
   color: white;
-  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
   border-radius: 5px;
-  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.back-home-btn:hover {
-  background-color: #009ffd;
+.back-to-home button:hover {
+  background-color: #45a049; /* Darker green on hover */
 }
