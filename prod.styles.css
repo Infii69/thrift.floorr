@@ -275,7 +275,7 @@ nav {
 }
 
 /* Ensure responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     .products-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusts grid for smaller screens */
     }
