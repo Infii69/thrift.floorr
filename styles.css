@@ -266,7 +266,7 @@ footer {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   header nav {
       flex-direction: column;
       position: static;
