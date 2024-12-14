@@ -53,6 +53,13 @@ header nav {
   border-radius: 50%; /* Circular background */
 }
 
+@media (max-width: 768px) {
+  .nav-links {
+      flex-direction: column; /* Stack the items vertically */
+      align-items: center; /* Center the items */
+  }
+}
+
 /* Responsive Design for Smaller Screens */
 @media screen and (max-width: 768px) {
   .nav-links {
