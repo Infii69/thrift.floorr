@@ -85,24 +85,6 @@ header, nav {
   filter: brightness(1.2); /* Icon brightness on hover */
 }
 
-@media (max-width: 768px) {
-  nav {
-      flex-direction: row; /* Force horizontal layout */
-  }
-
-  .nav-links {
-      flex-direction: row; /* Align nav items in a row */
-      justify-content: space-around; /* Evenly distribute items */
-      width: 100%; /* Take full width of the screen */
-  }
-
-  .nav-links li {
-      margin: 0 10px; /* Adjust spacing for small screens */
-  }
-}
-
-
-
 /* Section Styles */
 section {
   padding: 40px 20px;
