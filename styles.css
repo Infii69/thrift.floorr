@@ -44,6 +44,12 @@ header nav {
   color: #ffcc00;
 }
 
+@media screen and (max-width: 768px) {
+  header nav {
+      flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+  }
+}
+
 /* Section Styles */
 section {
   padding: 40px 20px;
