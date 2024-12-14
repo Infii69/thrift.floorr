@@ -85,7 +85,7 @@ section {
 }
 
 #home {
-  background: linear-gradient(135deg, #2a2a72, #009ffd);
+  background: linear-gradient(140deg, #857951, #009ffd);
   color: #fff;
   padding: 80px 20px;
 }
@@ -97,6 +97,7 @@ section {
 
 #home h2 {
   font-size: 1.5rem;
+  color: #ddd;
 }
 
 .section-divider {
