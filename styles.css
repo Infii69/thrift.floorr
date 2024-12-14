@@ -259,19 +259,6 @@ nav {
     align-items: center;
 }
 
-/* Logo (Centered) */
-.logo {
-    flex-grow: 1;
-    text-align: center;
-}
-
-.logo a {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #d84315; /* Warm brown color */
-    text-decoration: none;
-}
-
 /* Menu Icon (Hamburger Icon for Mobile) */
 .menu-icon {
     display: none;
