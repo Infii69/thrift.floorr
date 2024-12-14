@@ -17,7 +17,7 @@ body {
 /* General Header and Navigation Bar Styles */
 header {
   background-color: #2a2a72;
-  color: white;
+  position: sticky;
   padding: 10px 20px;
   position: sticky;
   top: 0;
@@ -25,10 +25,11 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header nav {
+header, nav {
   display: flex;
   justify-content: space-between; /* Spread links evenly */
   align-items: center; /* Center items vertically */
+
 }
 
 .nav-links {
@@ -83,6 +84,23 @@ header nav {
   transform: scale(1.1); /* Slight zoom effect */
   filter: brightness(1.2); /* Icon brightness on hover */
 }
+
+@media (max-width: 768px) {
+  nav {
+      flex-direction: row; /* Force horizontal layout */
+  }
+
+  .nav-links {
+      flex-direction: row; /* Align nav items in a row */
+      justify-content: space-around; /* Evenly distribute items */
+      width: 100%; /* Take full width of the screen */
+  }
+
+  .nav-links li {
+      margin: 0 10px; /* Adjust spacing for small screens */
+  }
+}
+
 
 
 /* Section Styles */
@@ -265,6 +283,7 @@ footer {
 @media screen and (max-width: 768px) {
   header nav {
       flex-direction: column;
+      position: static;
   }
 
   .nav-links {
