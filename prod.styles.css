@@ -152,6 +152,38 @@ footer {
     }
 }
 
+@media (max-width: 576px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        grid-auto-rows: auto; /* Allow unlimited rows */
+        gap: 10px; /* Reduce space between items */
+        padding: 10px; /* Smaller padding */
+    }
+
+    .product-card {
+        padding: 5px; /* Reduce padding */
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .product-card img {
+        height: 100px; /* Reduce image size */
+        object-fit: cover; /* Keep images proportional */
+    }
+
+    .product-name {
+        font-size: 12px; /* Smaller product name */
+    }
+
+    .product-details {
+        font-size: 10px; /* Smaller product details */
+    }
+
+    .product-price h3 {
+        font-size: 12px; /* Smaller price font */
+    }
+}
+
+
 
 
 /* Ensure the navbar uses flexbox for alignment */
