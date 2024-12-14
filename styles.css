@@ -1,316 +1,243 @@
-/* General Styles */
+/* styles.css */
+
+/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-/* Header & Navigation */
 header {
-    width: 100%;
-    padding: 20px 0;
-    background-color: #8b5e3c;
-    text-align: center;
+  background-color: #2a2a72;
+  color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
-nav a:hover {
-    background-color: #4a3c31;
-    transform: scale(1.1);
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-/* Home Section */
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Section Styles */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
 #home {
-    background-color: #d9a679;
-    text-align: center;
-    padding: 80px 20px;
-    color: #4a3c31;
+  background: linear-gradient(135deg, #2a2a72, #009ffd);
+  color: #fff;
+  padding: 80px 20px;
 }
 
 #home h1 {
-    font-size: 2.5em;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 #home h2 {
-    font-size: 1.5em;
-    margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.section-divider {
+  height: 4px;
+  background-color: #ccc;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 5px;
 }
 
 /* About Section */
-#about {
-    padding: 50px 20px;
-    background-color: #f0b06b;
-    text-align: center;
-}
-
 #about h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2a2a72;
 }
 
 #about h3 {
-    font-size: 1.2em;
-    color: #000000;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+/* Products Section */
+.products-section {
+  background-color: #fff;
+}
+
+.products-section h1 {
+  font-size: 2rem;
+  color: #2a2a72;
+  margin-bottom: 20px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  margin: 15px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 15px 15px;
+  line-height: 1.5;
+}
+
+.product-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card h2:last-child {
+  color: #2a2a72;
+  font-weight: bold;
+  margin: 0 15px 15px;
+}
 
 /* Social Section */
 #social {
-    padding: 50px 20px;
-    background-color: #de963e;
-    text-align: center;
+  background-color: #f0f0f0;
+  padding: 40px 20px;
 }
 
 #social h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+  color: #2a2a72;
+  margin-bottom: 20px;
 }
 
-.social-container a {
-    font-size: 1.5em;
-    color: #0d92f0;
-    text-decoration: none;
-    transition: color 0.3s;
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.social-container a img {
-    width: 50px; /* Set a specific width */
-    height: 50px; /* Set a specific height */
-    margin-right: 10px; /* Add some space between the image and the text */
-    transition: transform 0.3s; /* Smooth transition for hover effect */
+.instagram-link {
+  text-decoration: none;
+  color: #2a2a72;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
 }
 
-.social-container a:hover {
-    color: #4a3c31;
+.instagram-link:hover {
+  transform: scale(1.05);
+}
+
+.instagram-link img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
 }
 
 /* Footer */
 footer {
-    background-color: #8b5e3c;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    font-size: 1em;
+  background-color: #2a2a72;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
 }
 
-/* Section Divider */
-.section-divider {
-    height: 4px;
-    background-color: #8b5e3c;
-    margin: 30px 0;
-    border-radius: 2px;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-}
-
-
-/* Products Section */
-#products {
-    background-color: #7bf0ee; /* Soft warm peach background */
-    padding: 60px 20px;
-    text-align: center;
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  header nav {
+      flex-direction: column;
   }
-  
-  #products h1 {
-    font-size: 2.8em;
-    color: #b34d12; /* Warm brown-orange for the heading */
-    margin-bottom: 30px;
-    font-weight: bold;
+
+  .nav-links {
+      flex-direction: column;
+      gap: 10px;
   }
-  
+
+  #home h1 {
+      font-size: 2rem;
+  }
+
   .products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexible grid */
-    gap: 30px;
-    justify-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+      grid-template-columns: 1fr;
   }
-  
-  /* Product Card Styles */
-  .product-card {
-    background-color: #ffffff; /* White background for cards */
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+      font-size: 14px;
   }
-  
-  .product-card:hover {
-    transform: translateY(-8px); /* Hover effect to lift the card */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+
+  #home h1 {
+      font-size: 1.8rem;
   }
-  
-  .product-card img {
-    width: 100%;
-    height: 250px; /* Fixed height for images */
-    object-fit: contain; /* Ensure the image is covered properly */
+
+  #home h2 {
+      font-size: 1.2rem;
   }
-  
+
   .product-card h2 {
-    text-align: center;
-    font-size: 1.6em;
-    font-weight: bold;
-    color: #8e572c; /* Darker warm brown */
-    margin: 15px 0 10px;
+      font-size: 1rem;
   }
-  
+
   .product-card p {
-    color: #6d4c41; /* Warm brown for the text */
-    margin-bottom: 10px;
-    font-size: 1em;
-    text-align: center;
+      font-size: 0.8rem;
   }
-  
-  .product-card .add-to-cart {
-    background-color: #ff7043; /* Coral color for button */
-    color: white;
-    padding: 12px 20px;
-    font-size: 1.1em;
-    text-decoration: none;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    font-weight: bold;
+
+  .instagram-link span {
+      font-size: 0.9rem;
   }
-  
-  .product-card .add-to-cart:hover {
-    background-color: #e64a19; /* Darker coral on hover */
-  }
-  
-  /* Responsive Design for Smaller Screens */
-  @media (max-width: 1024px) {
-    #products h1 {
-      font-size: 2.4em;
-    }
-  
-    .product-card {
-      width: 90%; /* Make cards more compact */
-    }
-  
-    .product-card h2 {
-      font-size: 1.4em;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    #products h1 {
-      font-size: 2em;
-    }
-  
-    .product-card h2 {
-      font-size: 1.2em;
-    }
-  
-    .product-card p {
-      font-size: 0.95em;
-    }
-  
-    .product-card .add-to-cart {
-      padding: 10px 18px;
-    }
-  }
-  
-
-  /* Basic Styling for Header */
-header {
-    background-color: #ffcc80; /* Light warm color */
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-}
-
-/* Menu Icon (Hamburger Icon for Mobile) */
-.menu-icon {
-    display: none;
-    font-size: 2em;
-    color: #d84315; /* Matching color for the icon */
-    cursor: pointer;
-}
-
-/* Navigation Links */
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: #8e572c; /* Warm brown color for text */
-    font-size: 1.1em;
-    font-weight: bold;
-}
-
-/* Hide Navigation Links Initially (for mobile) */
-#nav-links {
-    display: flex;
-}
-
-@media (max-width: 768px) {
-    /* Hide links by default on mobile */
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #ffcc80;
-        position: absolute;
-        top: 60px; /* Adjust based on your header height */
-        left: 0;
-        text-align: center;
-        padding: 20px 0;
-    }
-
-    .nav-links li {
-        margin: 15px 0;
-    }
-
-    /* Show the hamburger menu icon on mobile */
-    .menu-icon {
-        display: block;
-    }
-
-    /* Show nav links when the menu icon is clicked */
-    #nav-links.active {
-        display: flex;
-    }
 }
