@@ -1,48 +1,49 @@
-<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Thrift.Floor</title>
-    <link rel="website icon " type="png"
-    href="images/thrift-logo.png">
-    <link rel="stylesheet" href="styles.css"> <!-- Assuming you're using the same styles.css -->
+    <title>Contact Us - Thrift.Floor</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
 
-    <!-- Header with Navigation -->
+<body>
+    <!-- Navbar/Header -->
     <header>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="contact.html"><i class="fas fa-address-book"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact-container">
+    <!-- Contact Information Section -->
+    <section id="contact-info" class="contact-section">
+        <div class="container">
             <h1>Contact Us</h1>
-            <p>Feel free to reach out to us using the contact details below or through our social media!</p>
+            <p>If you have any questions, feel free to reach out to us through the contact details below:</p>
 
-            <!-- Contact Information -->
-            <div class="contact-info">
-                <h2>Our Details</h2>
-                <p><strong>Email:</strong> samarthd094@gmail.com</p>
-                <p><strong>Phone:</strong> +91 9130388436</p>
+            <div class="contact-details">
+                <ul>
+                    <li><i class="fas fa-envelope"></i> Email: <a href="mailto:contact@thriftfloor.com">contact@thriftfloor.com</a></li>
+                    <li><i class="fas fa-phone-alt"></i> Phone: +123 456 7890</li>
+                    <li><i class="fas fa-phone-alt"></i> WhatsApp: +987 654 3210</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Address: 123 Fashion Street, City, Country</li>
+                </ul>
             </div>
-
+        </div>
     </section>
-
-    <div class="back-to-home">
-        <a href="index.html" class="back-home-btn">Back to Home</a>
-    </div>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Thrift.Floor™. All rights reserved.</p>
     </footer>
 
+    <script src="script.js"></script> <!-- Link to external JS file -->
 </body>
+
 </html>
