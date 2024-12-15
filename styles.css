@@ -58,7 +58,7 @@ header nav {
 
 /* Hero Section */
 #home {
-  background: linear-gradient(140deg, rgba(0, 94, 255, 0.7), rgba(255, 99, 71, 0.7)), url('images/home-bg.jpg') center/cover no-repeat;
+  background: linear-gradient(150deg, #005eff, rgba(211, 32, 0, 0.7)), url('images/home-bg.jpg') center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 100px 20px;
