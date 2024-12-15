@@ -191,3 +191,147 @@ footer a:hover {
     font-size: 1rem;
   }
 }
+
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #ff4e41;
+}
+
+.add-to-cart-btn:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+
+/* Popup Container */
+.popup-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+
+/* Popup Box */
+.popup {
+  width: 300px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  animation: popup-show 0.5s forwards ease-in-out;
+}
+
+/* Popup Icon */
+.popup-icon {
+  font-size: 2rem;
+  color: #2575fc;
+  margin-bottom: 10px;
+}
+
+/* Popup Message */
+.popup-message {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 10px;
+}
+
+.progress-bar .progress {
+  width: 0;
+  height: 100%;
+  background: #2575fc;
+  animation: progress-fill 3s linear forwards;
+}
+
+/* Checkmark */
+.checkmark {
+  font-size: 2rem;
+  color: #28a745;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  animation: checkmark-show 0.5s ease-in-out forwards;
+  animation-delay: 3s;
+}
+
+/* Animations */
+@keyframes popup-show {
+  from {
+      transform: translateY(50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes progress-fill {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+@keyframes checkmark-show {
+  from {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 983px) {
+  .popup {
+      width: 90%;
+      padding: 15px;
+  }
+
+  .popup-icon {
+      font-size: 1.5rem;
+  }
+
+  .popup-message {
+      font-size: 0.9rem;
+  }
+}

@@ -17,6 +17,7 @@
             <ul class="nav-links">
                 <li><a href="index.html"><i class="fas fa-home"></i> </a></li>
                 <li><a href="contact.html"><i class="fas fa-address-book"></i> </a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
             </ul>
             <div class="right-text">Thrift Floor™</div>
         </nav>
@@ -40,6 +41,7 @@
                         <div class="product-price">
                             <h3>Rs. 549</h3>
                         </div>
+                        <button class="add-to-cart-btn" onclick="addToCart('HRX OVERSIZED T-SHIRT', 'Yellow', 'XL', '549', 'images/prod-1.webp')">Add to Cart</button>
                     </div>
                 </div>
 
@@ -54,6 +56,7 @@
                         <div class="product-price">
                             <h3>Rs. 499</h3>
                         </div>
+                        <button class="add-to-cart-btn" onclick="addToCart('BASIC HOODIE WITH BACKPRINT', 'Light Brown', 'M', '499', 'images/prod-2.webp')">Add to Cart</button>
                     </div>
                 </div>
 
@@ -68,6 +71,7 @@
                         <div class="product-price">
                             <h3>Rs. 899</h3>
                         </div>
+                        <button class="add-to-cart-btn" onclick="addToCart('HIGHLANDER BLACK SWEATSHIRT', 'Black', 'XL', '899', 'images/prod-3.webp')">Add to Cart</button>
                     </div>
                 </div>
 
@@ -82,40 +86,27 @@
                         <div class="product-price">
                             <h3>Rs. 449</h3>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Sold Out Product -->
-                <div class="product-card sold-out">
-                    <a href="https://www.instagram.com/p/DCo-ofGz8Xc/?img_index=1" target="_blank">
-                        <img src="images/prod-5.webp" alt="Product 5">
-                    </a>
-                    <div class="product-overlay"> ❎ SOLD OUT </div>
-                    <div class="product-info">
-                        <h2 class="product-name">BOMBER JACKET</h2>
-                        <p class="product-details">Size: L | Chest: 48 | Color: Blue</p>
-                        <div class="product-price">
-                            <h3>Rs. 600</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Another Sold Out Product -->
-                <div class="product-card sold-out">
-                    <a href="https://www.instagram.com/p/DCtyJoXTwaP/?img_index=1" target="_blank">
-                        <img src="images/prod-6.webp" alt="Product 6">
-                    </a>
-                    <div class="product-overlay"> ❎ SOLD OUT </div>
-                    <div class="product-info">
-                        <h2 class="product-name">LEATHER JACKET</h2>
-                        <p class="product-details">Size: M | Chest: 44 | Color: Black</p>
-                        <div class="product-price">
-                            <h3>Rs. 1299</h3>
-                        </div>
+                        <button class="add-to-cart-btn" onclick="addToCart('ANIME PREMIUM QUALITY HOODIE', 'Black', 'M', '449', 'images/prod-4.webp')">Add to Cart</button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="popup-container" id="popup">
+            <div class="popup">
+                <div class="popup-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <p class="popup-message">Item added to cart</p>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="checkmark">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- Footer -->
@@ -123,22 +114,24 @@
         <p>&copy; 2024 Thrift.Floor™. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
-
     <script>
-        // Get the header element
-        const header = document.querySelector('header');
-      
-        // Listen for the scroll event
-        window.addEventListener('scroll', () => {
-          if (window.scrollY > 50) { // When scrolled down more than 50px
-            header.classList.add('hidden'); // Add the 'hidden' class
-          } else {
-            header.classList.remove('hidden'); // Remove the 'hidden' class
-          }
-        });
-      </script>
-      
-</body>
+        // Function to add items to cart and store in localStorage
+        function addToCart(name, color, size, price, image) {
+            const product = {
+                name: name,
+                color: color,
+                size: size,
+                price: price,
+                image: image
+            };
 
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            alert(`${name} has been added to your cart!`);
+        }
+    </script>
+</body>
+<script src="products.js"></script>
 </html>
