@@ -1,9 +1,11 @@
 /* General Reset */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     color: #333;
     background-color: #f9f9f9;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
 /* Header Styles */
@@ -14,12 +16,16 @@ header {
     top: 0;
     z-index: 1000;
     padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 header .logo a {
@@ -40,6 +46,7 @@ header .nav-links a {
     color: #333;
     font-size: 1rem;
     font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 header .nav-links a:hover {
@@ -54,6 +61,9 @@ header .nav-links a:hover {
     background: white;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cart-container h1 {
@@ -67,6 +77,7 @@ header .nav-links a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+    width: 100%;
 }
 
 /* Cart Items Section */
@@ -85,6 +96,8 @@ header .nav-links a:hover {
     gap: 15px;
     margin-bottom: 15px;
     align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 .cart-items img {
@@ -116,6 +129,7 @@ header .nav-links a:hover {
     border-radius: 5px;
     cursor: pointer;
     font-size: 0.9rem;
+    transition: background 0.2s ease;
 }
 
 .cart-items .remove-btn:hover {
@@ -159,6 +173,7 @@ header .nav-links a:hover {
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
+    transition: background 0.2s ease;
 }
 
 .checkout-btn:hover {
@@ -173,4 +188,6 @@ footer {
     color: white;
     font-size: 0.9rem;
     margin-top: 40px;
+display : flex;
+    align-items: center;
 }
