@@ -1,328 +1,203 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General styles */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #fff; /* Clean white background */
+  background-color: #f2f1ef; /* Light warm beige */
   color: #333;
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header Styles */
-header {
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 15px 30px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px); /* Adds blur effect to background */
-}
-
+/* Modify the navigation bar */
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1080px;
-  margin: 0 auto;
+  padding: 10px 20px;
 }
 
 .nav-links {
   display: flex;
-  list-style: none;
-  gap: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links li a {
+  color: rgb(1, 1, 2);
   text-decoration: none;
-  color: #333;
-  font-size: 1.1rem;
-  font-weight: 500;
-  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 18px;
 }
 
 .right-text {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #333;
+  font-size: 24px;
+  color: rgb(165, 44, 209);
+  margin-left: auto; /* Moves it to the far right */
 }
 
-.nav-links a:hover {
-  color: #ff6347;
-  transform: translateY(-5px);
-}
 
-/* Hero Section */
 #home {
-  background: linear-gradient(150deg, #005eff, rgba(211, 32, 0, 0.7)), url('images/home-bg.jpg') center/cover no-repeat;
-  color: white;
   text-align: center;
-  padding: 100px 20px;
+  background: linear-gradient(135deg, #f6c27e, #f97d7d); /* Warm gradient */
+  padding: 150px 0;
+  color: white;
 }
 
 #home h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-size: 50px;
+  margin: 0;
 }
 
 #home h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 30px;
+  font-size: 30px;
+  margin: 20px 0 0;
 }
 
-/* About Section */
-#about {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
+#about, #social, #products {
+  padding: 30px 10%;
+  background-color: #ffefc1; /* Warm light yellow */
+}
+
+#about h2, #social h2, #products h2 {
+  color: #333;
   text-align: center;
-}
-
-#about h2 {
-  font-size: 2.5rem;
-  color: #2a2a72;
   margin-bottom: 20px;
 }
 
-#about h3 {
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #666;
-  line-height: 1.8;
-}
-
-/* Section Divider */
-.section-divider {
-  height: 4px;
-  background-color: #ccc;
-  margin: 40px auto;
-  width: 80%;
-  border-radius: 5px;
-}
-
-/* Products Section */
-.products-section {
-  background-color: #fff;
-  padding: 80px 20px;
+#about h3, #social h3 {
+  font-size: 18px;
   text-align: center;
+  line-height: 1.6;
+  color: #666;
 }
 
-.products-section h1 {
-  font-size: 2.5rem;
-  color: #2a2a72;
-  margin-bottom: 30px;
+.products-section {
+  background-color: #f7e0b1; /* Soft warm beige */
 }
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .product-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: white;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .product-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .product-card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: auto;
+  border-radius: 10px;
 }
 
 .product-card h2 {
-  font-size: 1.2rem;
-  margin: 15px;
+  font-size: 20px;
+  margin: 10px 0;
   color: #333;
 }
 
 .product-card p {
-  font-size: 0.9rem;
+  font-size: 16px;
   color: #666;
-  margin: 0 15px 15px;
-  line-height: 1.5;
 }
 
-.product-card a {
-  text-decoration: none;
-  color: inherit;
+.product-card h2 + p {
+  margin-bottom: 10px;
 }
 
-.product-card h2:last-child {
-  color: #2a2a72;
+.product-price {
+  font-size: 18px;
   font-weight: bold;
-  margin: 0 15px 15px;
-}
-
-/* View More Button */
-.view-more-container {
-  text-align: center;
-  margin-top: 40px;
+  color: #d77b3b; /* Warm orange-brown */
 }
 
 .view-more-btn {
-  padding: 15px 30px;
-  background-color: #ff6347;
+  background-color: #d77b3b;
   color: white;
-  font-size: 1.5em;
+  padding: 15px 30px;
+  font-size: 18px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .view-more-btn:hover {
-  background-color: #e5533e;
-  transform: scale(1.1);
-}
-
-/* Social Section */
-#social {
-  background: linear-gradient(135deg, #ff9a8b, #ff6a88, #ff99ac);
-  padding: 60px 20px;
-  text-align: center;
-  color: #fff;
-  border-top: 5px solid #f8e1e1;
-}
-
-#social h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-  color: #fff;
+  background-color: #f97d7d; /* Lighter orange */
 }
 
 .social-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .social-container a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
   text-decoration: none;
-  color: #ff6a88;
-  font-size: 1.2rem;
-  font-weight: 600;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 150px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.social-container a:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-.social-container a img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 10px;
-  border-radius: 50%;
-  border: 2px solid #ff6a88;
-}
-
-.social-container a span {
-  margin-top: 10px;
-  font-size: 1rem;
   color: #333;
-  font-weight: 600;
 }
 
-/* Footer */
+.social-container img {
+  width: 50px;
+  height: 50px;
+}
+
 footer {
-  background-color: #2a2a72;
-  color: #fff;
+  background-color: #d77b3b; /* Warm orange-brown */
+  color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
+  padding: 10px;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 983px) {
-  header {
-    padding: 15px 20px;
-  }
-
-  #home {
-    padding: 80px 20px;
+/* Media Query for smaller screens like 983px */
+@media (max-width: 983px) {
+  #about, #social, #products {
+      padding: 30px 5%; /* Reduce padding on smaller screens */
   }
 
   #home h1 {
-    font-size: 2.2rem;
+      font-size: 40px; /* Smaller font size for titles */
   }
 
   #home h2 {
-    font-size: 1.2rem;
+      font-size: 25px; /* Smaller subtitle font */
   }
 
   .products-grid {
-    grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* More flexible grid */
+      gap: 15px; /* Slightly smaller gap between products */
+  }
+
+  .product-card {
+      padding: 15px; /* Smaller padding */
   }
 
   .product-card h2 {
-    font-size: 1rem;
+      font-size: 18px; /* Smaller product name font */
   }
 
-  .product-card p {
-    font-size: 0.85rem;
+  .product-price {
+      font-size: 16px; /* Slightly smaller product price */
   }
 
   .view-more-btn {
-    font-size: 1.2em;
-    padding: 12px 24px;
-  }
-}
-
-@media screen and (max-width: 983px) {
-  body {
-    font-size: 14px;
+      font-size: 16px; /* Smaller button font */
+      padding: 12px 25px;
   }
 
-  #home h1 {
-    font-size: 1.8rem;
-  }
-
-  #home h2 {
-    font-size: 1rem;
-  }
-
-  .product-card h2 {
-    font-size: 0.9rem;
-  }
-
-  .product-card p {
-    font-size: 0.75rem;
-  }
-
-  .instagram-link span {
-    font-size: 0.9rem;
+  .social-container img {
+      width: 40px;
+      height: 40px;
   }
 }
