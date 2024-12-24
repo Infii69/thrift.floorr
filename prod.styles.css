@@ -148,28 +148,20 @@ footer {
   margin-top: 40px;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 983px) {
-  .nav-links {
-      flex-wrap: wrap;
-      gap: 15px;
+@media screen and (max-width: 983px) {
+  .product-card {
+      width: 100%; /* Adjusts the width to be 100% of the container */
+      margin: 10px 0; /* Adds space between cards */
+      padding: 10px; /* Adds padding for better spacing */
+      grid-template-columns: 2fr;
   }
 
   .products-grid {
-      grid-template-columns: 1fr 1fr;
+      display: grid;
+      grid-template-columns: 2fr; /* Stacks the products vertically */
+      gap: 10px; /* Adjust the gap between product cards */
   }
 }
-
-@media (max-width: 768px) {
-  .products-grid {
-      grid-template-columns: 1fr;
-  }
-
-  .add-to-cart-btn {
-      width: 100%;
-  }
-}
-
 
 #info {
   background-color: #f4f4f4;
