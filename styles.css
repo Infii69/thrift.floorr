@@ -124,6 +124,7 @@ header nav {
 }
 
 .view-more-btn {
+  text-align: center;
   background-color: #d77b3b;
   color: white;
   padding: 15px 30px;
@@ -153,8 +154,9 @@ header nav {
   height: 50px;
 }
 
+
 footer {
-  background-color: #d77b3b; /* Warm orange-brown */
+  background-color: #7e6826; /* Warm orange-brown */
   color: white;
   text-align: center;
   padding: 10px;
